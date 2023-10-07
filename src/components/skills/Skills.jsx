@@ -9,6 +9,10 @@ import {
   SiJavascript,
   SiTailwindcss,
   SiMongodb,
+  SiSketch,
+  SiAdobeillustrator,
+  SiFigma,
+  SiAdobephotoshop,
   SiExpress,
 } from "react-icons/si";
 import { GrCode } from "react-icons/gr";
@@ -42,17 +46,17 @@ const Skills = ({ darkMode }) => {
               className="progress flex items-center h-[100%] justify-end md:justify-center"
             >
               <div className=" flex flex-col gap-6  w-3/4  my-5 md:w-[90%]">
-                <ProgressBar logo={<IoLogoHtml5 />} name={"HTML"} value={95} />
-                <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={88} />
+                <ProgressBar logo={<SiFigma/>} name={"Figma"} value={95} />
+                <ProgressBar logo={<SiAdobeillustrator/>} name={"Adobe Illustrator"} value={88} />
                 <ProgressBar
-                  logo={<SiJavascript />}
-                  name={"Javascript"}
+                  logo={<SiAdobephotoshop />}
+                  name={"Adobe Photoshop"}
                   value={80}
                 />
-                <ProgressBar logo={<FaReact />} name={"React Js"} value={80} />
+                {/* <ProgressBar logo={<FaReact />} name={"React Js"} value={80} /> */}
                 <ProgressBar
-                  logo={<SiTailwindcss />}
-                  name={"Tailwind CSS"}
+                  logo={ <SiSketch/>}
+                  name={"Sketch"}
                   value={80}
                 />
               </div>
@@ -62,33 +66,33 @@ const Skills = ({ darkMode }) => {
           <div className="right relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
             <div className="first2 flex flex-col gap-10">
               <SkillBox
-                logo={<IoLogoNodejs />}
+                logo={<SiFigma />}
                 black={"white"}
                 white={"black"}
-                skill={"Node Js"}
+                skill={"Figma"}
               />
               <SkillBox
-                logo={<SiMongodb />}
+                logo={<SiAdobeillustrator />}
                 black={"white"}
                 white={"black"}
-                skill={"MongoDB"}
+                skill={"Adobe Illustrator"}
               />
             </div>
             <div className="last2 flex flex-col gap-10">
               <SkillBox
-                logo={<SiExpress />}
+                logo={<SiAdobephotoshop />}
                 black={"black"}
                 white={"white"}
-                skill={"Express Js"}
+                skill={"Adobe Photoshop"}
               />
               <SkillBox
                 className=""
                 logo={
-                  <GrCode/>
+              <SiSketch/>
                 }
                 black={"black"}
                 white={"white"}
-                skill={"C++"}
+                skill={"Sketch"}
               />
               {/* <SkillBox
                 className=""
